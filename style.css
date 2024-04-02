@@ -1,0 +1,253 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 70%;
+  height: 80vh;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.classvideos-Whole-Box {
+  background-color: #f5f2eb;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+.cv-top-horizontal-bar {
+  /* border: 1px solid black; */
+  padding: 0px 10px 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cv-heading {
+  border-left: 5px solid #f3b872;
+  padding: 5px 20px;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cv-options {
+  display: flex;
+
+}
+
+.cv-search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #ffff;
+  border: 1px solid #e2e2e2;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #888888;
+}
+
+.cv-search-input {
+  border: none;
+  outline: none;
+  /* padding-left: 15px;   */
+  padding: 5px;
+  font-size: 20px;
+  width: 200px;
+  text-align: start;
+  color: #888888;
+  margin-left: 30px;
+}
+
+.fa-magnifying-glass {
+  position: absolute;
+  left: 10px;
+  font-size: 20px;
+}
+
+.cv-filters-container,
+.cv-sortby-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  padding-left: 15px;
+  border-radius: 10px;
+  background-color: #ffff;
+  border: 1px solid #e2e2e2;
+  color: #888888;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.cv-top-images {
+  width: 25px;
+  height: 25px;
+  margin-left: 15px;
+}
+
+
+.cv-filters-container:hover,
+.cv-sortby-container:hover {
+  background-color: #e8e8e8;
+}
+
+
+/*----------------------- filter & sort options box----------------------- */
+
+
+.cv-sortby-options {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 3%;
+  background-color: #ffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.cv-sortby-options.show {
+  display: block;
+}
+
+.cv-sortby-container:active .sortby-options {
+  display: block;
+}
+
+.cv-sortby-options-div {
+  padding: 13px 20px;
+  color: #888888;
+  margin-left: 15px;
+}
+
+.cv-sortby-options-div-border-bottom {
+  border-bottom: 1px solid #888888;
+  padding: 13px 20px;
+  color: #888888;
+  margin: 0px 15px 0px 15px;
+  text-align: center;
+}
+
+.cv-filters-options {
+  display: none;
+  position: absolute;
+  top: 80px;
+  right: 15%;
+  background-color: #ffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.cv-filters-options.disp {
+  display: flex;
+}
+
+
+.cv-filters-container:active .cv-filters-options {
+  display: block;
+}
+
+.cv-filter-options-two {
+  padding: 0px 20px 0px 20px;
+  margin: 20px 0px 20px 0px;
+}
+
+.cv-filter-options-two-border {
+  padding: 0px 20px 0px 20px;
+  border-right: 1px solid #e2e2e2;
+  margin: 20px 0px 20px 0px;
+}
+
+.cv-filter-options-heading {
+  padding: 0px 10px 0px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.cv-filter-options-status-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+.cv-filter-options-checkbox {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+  padding: 20px;
+}
+
+
+.cv-filter-options-div {
+  padding: 10px;
+}
+
+/*----------------------- Bottom box - iframe work ----------------------- */
+.cv-main-two-boxes {
+  /* border: 1px solid black; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: 1px 1px 10px rgb(196, 192, 192);
+  position: relative;
+  overflow: auto;
+  gap: 30px;
+  padding: 20px;
+}
+
+.cv-video-wrapper .cv-video-iframe {
+  /* padding: 20px; */
+  border: 0;
+  height: 180px;
+  /* left: 0;
+   position: absolute;
+   top: 0; */
+  width: 320px;
+  margin: 10px;
+}
+
+.cv-video-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 370px;
+}
+
+.cv-video-description {
+  display: flex;
+  padding-left: 20px;
+}
+
+.cv-video-logo-img {
+  width: 35px;
+  height: 35px;
+}
+
+.cv-video-name {
+  padding-left: 40px;
+}
+
+.cv-video-setting {
+  padding-left: 60px;
+  padding-top: 8px;
+}
+
+.fa-ellipsis-vertical {
+  font-size: 20px;
+  font-weight: 500px;
+}
